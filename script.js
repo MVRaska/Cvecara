@@ -6,10 +6,6 @@ let btnCheck = document.querySelectorAll('input[type="checkbox"]');
 let btnRadioKartica = document.getElementById('kartica');
 
 let divIspis = document.getElementById('ispis');
-divIspis.style.background = rgba(255, 255, 255, 0.5);
-divIspis.style.margin = '1px solid lightpink';
-divIspis.style.padding = '20px;
-
 
 let btnIzracunaj = document.getElementById('izracunaj');
 let btnResetuj = document.querySelector("input[type='reset']");
