@@ -7,6 +7,7 @@ let btnRadioKartica = document.getElementById('kartica');
 
 let divIspis = document.getElementById('ispis');
 
+
 let btnIzracunaj = document.getElementById('izracunaj');
 let btnResetuj = document.querySelector("input[type='reset']");
 
@@ -19,11 +20,11 @@ btnIzracunaj.addEventListener('click', (e) => {
     let brLili = inLili.value;
     let brGerbera = inGerber.value;
     
-    if(brRuza % 1 != 0 && brRuza < 0 || 
-        brLili % 1 != 0 && brLili < 0 || 
-        brGerbera % 1 != 0 && brGerbera < 0) {
-            divIspis.innerHTML = '';
+    if((brRuza % 1 != 0 || brRuza < 0) || 
+        (brLili % 1 != 0 || brLili < 0) || 
+        (brGerbera % 1 != 0 || brGerbera < 0)) {
             alert('Pogrešan unos broja cvetova');
+            divIspis.innerHTML = '';
         } else {
             divIspis.innerHTML = `<h2>Vaša porudžbina:</h2>`;
             for(let i = 1; i <= brRuza; i++) {
