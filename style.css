@@ -4,28 +4,31 @@
 }
 
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('cvece.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('flowers.jpg');
     background-position: center;
     background-size: cover;
     padding: 50px 10% 100px;
 }
 
-form label{
+form label {
     font-size: 18px;
     display: block;
     margin: 25px 0 10px 0;
 }
-form input[type='radio']:checked, form input[type='checkbox']:checked {
+
+form input[type='radio']:checked,
+form input[type='checkbox']:checked {
     accent-color: blueviolet;
     border-radius: 5px;
 }
 
-form input[type='submit'], form input[type='reset'] {
+form input[type='submit'],
+form input[type='reset'] {
     margin-top: 30px;
     padding: 4px;
-    background-color:  blueviolet;
+    background-color: blueviolet;
     color: white;
-    border: 1px solid  blueviolet;
+    border: 1px solid blueviolet;
     border-radius: 4px;
 }
 
@@ -34,28 +37,29 @@ form input[type='number'] {
     padding: 1px 0;
 }
 
-#ispis {
+#output {
     margin-top: 50px;
     padding: 20px 0;
 }
 
-#ispis p {
+#output p {
     font-size: 18px;
     margin: 20px 0;
 }
 
-#ispis, form label {
+#output,
+form label {
     color: rgb(145, 7, 145);
 }
 
-#ispis h2 {
+#output h2 {
     margin: 20px 0;
 }
 
-#ispis img {
+#output img {
     width: 60px;
     height: 60px;
-    object-fit:cover;
+    object-fit: cover;
     object-position: top;
     border-radius: 50%;
 }
